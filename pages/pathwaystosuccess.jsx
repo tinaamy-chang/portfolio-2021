@@ -5,7 +5,8 @@ import ProjectLayout, {
 import styled from "styled-components";
 
 const FullImg = styled.img`
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -13,30 +14,33 @@ const FullImg = styled.img`
 `;
 
 const FullImgPart = styled.img`
-  width: 70%;
+  max-width: 70%;
+  height: auto;
   border-radius: 5px;
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: white;
   @media (max-width: 800px) {
-    width: 100%;
+    max-width: 100%;
   }
 `;
 const FullImgNoStyle = styled.img`
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
   margin-bottom: 20px;
 `;
 
 const OldImg = styled.img`
-  width: 40%;
+  max-width: 40%;
+  height: auto;
   border-radius: 5px;
   margin: 20px 10px 0 0;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   @media (max-width: 800px) {
     margin: 10px 0;
-    width: 80%;
+    max-width: 80%;
   }
 `;
 

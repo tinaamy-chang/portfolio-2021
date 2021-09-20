@@ -3,7 +3,8 @@ import ProjectLayout from "../components/projectlayout";
 import styled from "styled-components";
 
 const FinalImg = styled.img`
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 `;

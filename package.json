@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "yarn build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -20,6 +21,7 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.13.2",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.0"
   }

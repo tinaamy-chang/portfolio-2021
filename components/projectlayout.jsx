@@ -1,11 +1,13 @@
-import Layout, { Header, Desktop, Mobile } from "../components/layout";
+import Layout, { Header } from "../components/layout";
 import styled from "styled-components";
 import HomeIcon from "@material-ui/icons/Home";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import Link from "next/link";
 
 const ContentContainer = styled.div`
+  position: relative;
   display: flex;
+  width: 100%;
   margin: 50px 20px 100px 20px;
   flex-direction: column;
   @media (max-width: 800px) {
@@ -15,6 +17,7 @@ const ContentContainer = styled.div`
 `;
 
 const BackgroundContainer = styled.div`
+  position: relative;
   background: ${(props) => props.theme.colors.mainBox};
   width: 100%;
   border-radius: 5px;

@@ -6,7 +6,8 @@ import ProjectLayout, {
 import styled from "styled-components";
 
 const ReefHalfImg = styled.img`
-  width: 30%;
+  max-width: 30%;
+  height: auto;
   border-radius: 5px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -16,7 +17,8 @@ const ReefHalfImg = styled.img`
   }
 `;
 const ReefQuarterImg = styled.img`
-  width: 20%;
+  max-width: 20%;
+  height: auto;
   border-radius: 5px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -39,7 +41,8 @@ const ReefQuarter = styled.div`
 `;
 
 const FinalImg = styled.img`
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 `;

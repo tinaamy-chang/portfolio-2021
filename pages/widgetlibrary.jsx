@@ -7,6 +7,7 @@ import styled from "styled-components";
 
 const WidgetGif = styled.img`
   max-width: 200px;
+  height: auto;
   background-color: white;
   border-radius: 5px;
   margin: 20px;
@@ -18,12 +19,14 @@ const WidgetGif = styled.img`
 `;
 
 const WireframeImg = styled.img`
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 `;
 
 const DemoFeedback = styled.div`
   padding: 20px;
-  width: 50%;
+  max-width: 50%;
+  height: auto;
 
   @media (max-width: 800px) {
     padding: 0px;
