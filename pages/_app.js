@@ -44,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
 
   ul > li {
     list-style-type: circle;
+    line-height: 1.5;
   }
 
 
@@ -68,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
       } 
 
   p {
-  margin-top: 0;
+    line-height: 1.5;
   }
 
   strong {

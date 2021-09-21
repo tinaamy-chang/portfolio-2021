@@ -17,6 +17,7 @@ import Layout, {
   ExploreImage,
   AboutP,
   AboutLinks,
+  NoWrap,
 } from "../components/layout";
 import Link from "next/link";
 import { useThemeSetter } from "../components/theme";
@@ -70,7 +71,7 @@ export default function Home() {
               <AboutP>
                 <Link href="#">
                   <AboutLinks aria-label="link to resume" target="_blank">
-                    Resume &#187;
+                    <NoWrap>Resume &#187;</NoWrap>
                   </AboutLinks>
                 </Link>{" "}
                 &#47;&#47;{" "}
@@ -80,7 +81,7 @@ export default function Home() {
                     aria-label="link to LinkedIn"
                     target="_blank"
                   >
-                    LinkedIn &#187;
+                    <NoWrap>LinkedIn &#187;</NoWrap>
                   </AboutLinks>
                 </Link>
               </AboutP>
@@ -88,19 +89,21 @@ export default function Home() {
               <AboutP>
                 <Link href="/archived">
                   <AboutLinks aria-label="link to archived designs">
-                    Archived Designs &#187;
+                    <NoWrap>Archived Designs &#187;</NoWrap>
                   </AboutLinks>
                 </Link>
               </AboutP>
               <AboutP style={{ marginBottom: 35 }}>
                 <Link href="/illustrationsanimations">
                   <AboutLinks aria-label="link to illustrations and animations">
-                    Illustrations/Animations &#187;
+                    <NoWrap>Illustrations/Animations &#187;</NoWrap>
                   </AboutLinks>
                 </Link>
               </AboutP>
               <Desktop>
-                <ModeButton onClick={toggleTheme}>{text}</ModeButton>
+                <ModeButton onClick={toggleTheme}>
+                  <NoWrap>{text}</NoWrap>
+                </ModeButton>
               </Desktop>
             </BoxLeftContent>
           </BoxLeft>
@@ -136,7 +139,9 @@ export default function Home() {
           </BoxRight>
         </BoxLeftRightContainer>
         <Mobile>
-          <ModeButton onClick={toggleTheme}>{text}</ModeButton>
+          <ModeButton onClick={toggleTheme}>
+            <NoWrap>{text}</NoWrap>
+          </ModeButton>
         </Mobile>
       </BoxContainer>
     </Layout>

@@ -26,6 +26,10 @@ export const ProfileContainer = styled.div`
   }
 `;
 
+export const NoWrap = styled.span`
+  white-space: nowrap;
+`;
+
 export const BoxContainer = styled.div`
   width: 85%;
   right: 0;
@@ -60,14 +64,14 @@ export const HelloText = styled.h1`
 
 export const Header = styled.h2`
   font-size: 1.6rem;
-  margin: 0;
+  margin: 0 0 10px 0;
   font-weight: 600;
   color: ${(props) => props.theme.colors.mainHeader};
 `;
 
 export const SubHeader = styled.h3`
   font-size: 1.8rem;
-  margin: 0;
+  margin: 10px 0 5px 0;
   font-weight: 400;
   color: #4d4d4d;
 `;
@@ -111,11 +115,10 @@ export const BoxLeftContent = styled.div`
 `;
 
 export const BoxRight = styled.div`
-  width: 50%;
+  width: 62%;
   position: relative;
   right: 0;
   margin-left: -100px;
-  padding-right: 60px;
 
   @media (max-width: 800px) {
     width: 100%;
