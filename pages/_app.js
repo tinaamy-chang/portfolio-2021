@@ -1,11 +1,12 @@
+import "../styles/globals.css";
 import { createGlobalStyle } from "styled-components";
 import Theme from "/components/theme";
 import SimpleReactLightbox from "simple-react-lightbox";
 import Head from "next/head";
+import { Normalize } from "styled-normalize";
 
 const GlobalStyle = createGlobalStyle`
 html {
-  min-height: 100%;
 }
 
   body {
@@ -13,7 +14,7 @@ html {
   font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
   color: #4d4d4d;
   font-weight: 400;
-  min-height: 95vh;
+  height: 100vh;
   background: linear-gradient(
     170deg,
     ${(props) => props.theme.colors.bgGradTop} 22%,
@@ -21,7 +22,7 @@ html {
   ) no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   
 
   @media (max-width: 800px) {
@@ -88,6 +89,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Theme>
         <GlobalStyle />
+        <Normalize />
         <SimpleReactLightbox>
           <Component {...pageProps} />
         </SimpleReactLightbox>
