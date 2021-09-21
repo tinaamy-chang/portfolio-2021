@@ -1,4 +1,4 @@
-import Document from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 import { ServerStyleSheet } from "styled-components";
 
@@ -27,5 +27,20 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
+  }
+
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link rel="shortcut icon" href="/favicon_fish.svg" />
+          <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }

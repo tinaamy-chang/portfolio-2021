@@ -33,17 +33,6 @@ export const BoxContainer = styled.div`
     width: 100%;
   }
 `;
-
-export const BoxLeftRightContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  width: 100%;
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
-`;
-
 export const HelloBox = styled.div`
   background-color: white;
   position: relative;
@@ -81,6 +70,17 @@ export const SubHeader = styled.h3`
   margin: 0;
   font-weight: 400;
   color: #4d4d4d;
+`;
+
+export const BoxLeftRightContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  width: 100%;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const BoxLeft = styled.div`
@@ -135,6 +135,8 @@ export const BoxRightBackground = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
+  z-index: -1;
+  pointer-events: none;
 
   @media (max-width: 800px) {
     top: 0;
@@ -148,9 +150,7 @@ export const BoxRightBackground = styled.div`
 
 export const BoxRightContent = styled.div`
   padding: 5px 70px;
-  position: absolute;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
   top: 0;
   left: 0;
