@@ -1,5 +1,8 @@
 import { SubHeader, Video } from "../components/layout";
-import ProjectLayout, { FlexContainerRow } from "../components/projectlayout";
+import ProjectLayout, {
+  FlexContainerRow,
+  FlexContainerColumn,
+} from "../components/projectlayout";
 import IllusAniImages from "../components/illusaniimages";
 
 function IllustrationsAnimations() {
@@ -7,16 +10,11 @@ function IllustrationsAnimations() {
     <ProjectLayout projectname="Illustrations and Animations Gallery">
       <SubHeader>Animations</SubHeader>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Animations and Illustrations done for fun, with purpose, or for
+        practice.
       </p>
-      <FlexContainerRow>
-        <Video style={{ margin: 20 }}>
+      <FlexContainerColumn>
+        <Video>
           <iframe
             width="560"
             height="315"
@@ -38,7 +36,7 @@ function IllustrationsAnimations() {
             allowFullScreen
           ></iframe>
         </Video>
-      </FlexContainerRow>
+      </FlexContainerColumn>
       <SubHeader>Illustrations</SubHeader>
       <FlexContainerRow>
         <IllusAniImages />

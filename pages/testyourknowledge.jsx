@@ -1,13 +1,6 @@
 import { SubHeader } from "../components/layout";
-import ProjectLayout from "../components/projectlayout";
-import styled from "styled-components";
-
-const FinalImg = styled.img`
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-`;
+import ProjectLayout, { FullImg } from "../components/projectlayout";
+import { SRLWrapper } from "simple-react-lightbox";
 
 function TestYourKnowledge() {
   return (
@@ -46,7 +39,12 @@ function TestYourKnowledge() {
         </li>
       </ul>
       <SubHeader>final</SubHeader>
-      <FinalImg src="/tyk_final.png" alt="wireframe" />
+      <SRLWrapper>
+        <FullImg
+          src="/tyk_final.png"
+          alt="Final Assets for Test Your Knowledge"
+        />{" "}
+      </SRLWrapper>
     </ProjectLayout>
   );
 }

@@ -9,7 +9,8 @@ const Tile = styled.img`
   object-fit: cover;
   border-radius: 5px;
   @media (max-width: 800px) {
-    width: 45%;
+    width: 120px;
+    height: 120px;
   }
 `;
 function ArchivedImages() {

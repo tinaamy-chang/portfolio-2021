@@ -89,11 +89,10 @@ export const BoxLeftRightContainer = styled.div`
 
 export const BoxLeft = styled.div`
   background: ${(props) => props.theme.colors.mainBox};
-  width: 40%;
+  width: 42%;
   border-radius: 5px;
   padding-right: 50px;
   margin-top: -60px;
-
   @media (max-width: 800px) {
     width: 100%;
     padding-right: 0;
@@ -187,18 +186,20 @@ export const AboutLinks = styled.a`
   &:visited {
     color: #4d4d4d;
   }
-  &:hover {
-    /* color: #222526; */
-    cursor: pointer;
-    color: #4d4d4d;
-    border-radius: 2px;
-    background-color: white;
-    color: ${(props) => props.theme.colors.modeButton};
-    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1),
-      transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
-    box-shadow: 0 0 1px 5px rgba(255, 255, 255, 1),
-      0 0 1px 10px rgba(255, 255, 255, 0.2),
-      0 0 1px 15px rgba(255, 255, 255, 0.1);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      /* color: #222526; */
+      cursor: pointer;
+      color: #4d4d4d;
+      border-radius: 20px;
+      background-color: white;
+      color: ${(props) => props.theme.colors.modeButton};
+      transition: box-shadow 250ms cubic-bezier(0.2, 0, 0.7, 1),
+        transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+      box-shadow: 0 0 1px 5px rgba(255, 255, 255, 1),
+        0 0 1px 10px rgba(255, 255, 255, 0.2),
+        0 0 1px 15px rgba(255, 255, 255, 0.1);
+    }
   }
   &:active {
     color: #4d4d4d;
@@ -209,26 +210,28 @@ export const ModeButton = styled.a`
   color: white;
   background: ${(props) => props.theme.colors.modeButton};
   font-weight: 500;
-  font-size: 1.3rem;
-  padding: 5px 15px;
-  border-radius: 2px;
+  font-size: 1.2rem;
+  padding: 8px 20px;
+  border-radius: 25px;
   box-sizing: border-box;
-
   transition: 0.2s;
 
   &:link {
   }
   &:visited {
   }
-  &:hover {
-    cursor: pointer;
-    background-color: white;
-    color: ${(props) => props.theme.colors.modeButton};
-    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1),
-      transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
-    box-shadow: 0 0 1px 3px rgba(255, 255, 255, 1),
-      0 0 1px 8px rgba(255, 255, 255, 0.15),
-      0 0 1px 15px rgba(255, 255, 255, 0.1);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      color: ${(props) => props.theme.colors.modeButton};
+      transition: box-shadow 350ms cubic-bezier(0.2, 0, 0.7, 1),
+        transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+      border: 1px solid ${(props) => props.theme.colors.modeButton};
+      box-shadow: 0 0 1px 3px rgba(255, 255, 255, 1),
+        0 0 1px 8px rgba(255, 255, 255, 0.15),
+        0 0 1px 15px rgba(255, 255, 255, 0.1);
+    }
   }
 
   &:active {
@@ -269,15 +272,17 @@ export const ExploreImage = styled.img`
   margin-bottom: 20px;
   /* box-shadow: 0px 3px 15px rgba(37, 127, 133, 0.35); */
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  transition: 0.2s ease;
-  &:hover {
-    cursor: pointer;
-    width: 101%;
-    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1),
-      transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
-    box-shadow: 0 0 1px 5px rgba(255, 255, 255, 1),
-      0 0 1px 8px rgba(255, 255, 255, 0.15),
-      0 0 1px 15px rgba(255, 255, 255, 0.1);
+  transition: 0.1s;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      cursor: pointer;
+      width: 100.5%;
+      transition: box-shadow 300ms cubic-bezier(0.2, 0, 0.7, 1),
+        transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+      box-shadow: 0 0 1px 5px rgba(255, 255, 255, 1),
+        0 0 1px 8px rgba(255, 255, 255, 0.15),
+        0 0 1px 15px rgba(255, 255, 255, 0.1);
+    }
   }
 `;
 

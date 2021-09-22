@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   div#__next,
       div#__next > div
       {
-        margin: 40px 0;
+        margin: 50px 0;
         color: #4d4d4d;
         font-weight: 400;
         box-sizing: border-box;
@@ -60,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
 
 
         @media (max-width: 1500px) {
-        margin: 30px 0;
+        margin: 40px 0;
         }
         @media (max-width: 800px) {
         padding: 10px;
@@ -72,8 +72,8 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
   }
 
-  strong {
-    font-weight: 500;
+  p > strong, ul > li > strong{
+    font-weight: 600;
   } 
 `;
 

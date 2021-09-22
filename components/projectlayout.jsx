@@ -8,7 +8,7 @@ const ContentContainer = styled.div`
   position: relative;
   display: flex;
   width: 100%;
-  margin: 50px 20px 100px 20px;
+  margin: 0px 20px 50px 20px;
   flex-direction: column;
   @media (max-width: 800px) {
     margin: 0 0 50px 0;
@@ -69,9 +69,11 @@ const BackButton = styled.a`
   }
   &:visited {
   }
-  &:hover {
-    cursor: pointer;
-    border: 3px solid white;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      cursor: pointer;
+      border: 3px solid white;
+    }
   }
 
   &:active {
@@ -108,12 +110,43 @@ const FishCreep = styled.img`
   }
 `;
 
+export const FullImg = styled.img`
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
+`;
+
+export const FullImgNoShadow = styled.img`
+  max-width: 100%;
+  height: auto;
+`;
+
+export const VideoBullets = styled.div`
+  padding: 20px;
+  max-width: 50%;
+  height: auto;
+
+  @media (max-width: 800px) {
+    padding: 0px;
+    max-width: 100%;
+  }
+`;
+
+export const Bullets = styled.div`
+  margin: 20px;
+  @media (max-width: 800px) {
+    margin: 10px;
+  }
+`;
+
 export default function ProjectLayout({ children, projectname }) {
   return (
     <>
       <FishBackContainer>
         <FishCreep src="/profile_fish.svg" alt="fish creep" />
-        <Link href="/">
+        <Link href="/" passHref>
           <BackButton
             style={{
               display: "flex",

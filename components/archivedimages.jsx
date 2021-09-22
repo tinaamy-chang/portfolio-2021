@@ -2,14 +2,14 @@ import { SRLWrapper } from "simple-react-lightbox";
 import styled from "styled-components";
 
 const Tile = styled.img`
-  display: inline-block;
   margin: 10px;
   width: 330px;
   height: 150px;
   object-fit: cover;
   border-radius: 5px;
   @media (max-width: 800px) {
-    width: 45%;
+    width: 120px;
+    height: 120px;
   }
 `;
 

@@ -31,10 +31,13 @@ export default function Home() {
         <Profile />
         <Mobile>
           <HelloBox>
-            <HelloText>
+            <HelloText style={{ marginBottom: 30 }}>
               Hello!
               <br /> I am Tina Amy Chang 🐟
             </HelloText>
+            <ModeButton onClick={toggleTheme}>
+              <NoWrap>{text}</NoWrap>
+            </ModeButton>
           </HelloBox>
         </Mobile>
       </ProfileContainer>
@@ -53,50 +56,48 @@ export default function Home() {
             <BoxLeftContent>
               <Header>learn</Header>
               <AboutP>
-                Web Designer
+                🖥️ Web Designer
                 <br />
-                Bio-Rad Laboratories
+                🧪 Bio-Rad Laboratories
+                <br />
+                📍 Bay Area
               </AboutP>
               <AboutP>
-                Visual Communications Design
+                📚 VisCom Design
                 <br />
-                SFSU 2019
+                🏫 SFSU 2019
               </AboutP>
               <AboutP>
                 Passionate about frontend development combined with UI, UX, and
                 Graphics.
-                <br />I design and develop for work and leisure
+                <br />I design and develop for work and leisure.
               </AboutP>
               <Header>connect</Header>
               <AboutP>
-                <Link href="#">
+                <Link href="#" passHref>
                   <AboutLinks aria-label="link to resume" target="_blank">
-                    <NoWrap>Resume &#187;</NoWrap>
+                    <NoWrap>📄 Resume &#187;</NoWrap>
                   </AboutLinks>
                 </Link>{" "}
                 &#47;&#47;{" "}
-                <Link href="https://www.linkedin.com/in/tinastunas">
-                  <AboutLinks
-                    href="https://www.linkedin.com/in/tinastunas"
-                    aria-label="link to LinkedIn"
-                    target="_blank"
-                  >
-                    <NoWrap>LinkedIn &#187;</NoWrap>
+                <Link href="https://www.linkedin.com/in/tinastunas" passHref>
+                  <AboutLinks aria-label="link to LinkedIn" target="_blank">
+                    <NoWrap>🌐 LinkedIn &#187;</NoWrap>
                   </AboutLinks>
                 </Link>
               </AboutP>
               <Header>dig deeper</Header>
               <AboutP>
-                <Link href="/archived">
+                <Link href="/archived" passHref>
                   <AboutLinks aria-label="link to archived designs">
-                    <NoWrap>Archived Designs &#187;</NoWrap>
+                    <NoWrap>🗄️ Archived Designs &#187;</NoWrap>
                   </AboutLinks>
                 </Link>
               </AboutP>
               <AboutP style={{ marginBottom: 35 }}>
-                <Link href="/illustrationsanimations">
+                <Link href="/illustrationsanimations" passHref>
                   <AboutLinks aria-label="link to illustrations and animations">
-                    <NoWrap>Illustrations/Animations &#187;</NoWrap>
+                    <NoWrap>🖍️ Illustrations/Animations &#187;</NoWrap>
                   </AboutLinks>
                 </Link>
               </AboutP>
@@ -111,25 +112,25 @@ export default function Home() {
             <BoxRightBackground />
             <BoxRightContent>
               <Header>explore</Header>
-              <Link href="/pathwaystosuccess">
+              <Link href="/pathwaystosuccess" passHref>
                 <ExploreImage
                   src="/pathwaysbutton.svg"
                   alt="pathways to success button"
                 />
               </Link>
-              <Link href="/testyourknowledge">
+              <Link href="/testyourknowledge" passHref>
                 <ExploreImage
                   src="/tykbutton.svg"
                   alt="test your knowledge button"
                 />
               </Link>
-              <Link href="/widgetlibrary">
+              <Link href="/widgetlibrary" passHref>
                 <ExploreImage
                   src="/widgetbutton.svg"
                   alt="widget library button"
                 />
               </Link>
-              <Link href="/greatbarrierreef">
+              <Link href="/greatbarrierreef" passHref>
                 <ExploreImage
                   src="/reefbutton.svg"
                   alt="what happened to the great barrier reer button"
@@ -138,11 +139,11 @@ export default function Home() {
             </BoxRightContent>
           </BoxRight>
         </BoxLeftRightContainer>
-        <Mobile>
+        {/* <Mobile>
           <ModeButton onClick={toggleTheme}>
             <NoWrap>{text}</NoWrap>
           </ModeButton>
-        </Mobile>
+        </Mobile> */}
       </BoxContainer>
     </Layout>
   );

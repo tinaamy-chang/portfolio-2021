@@ -3,41 +3,41 @@ import { ThemeProvider } from "styled-components";
 
 const fishTheme = {
   colors: {
-    bgGradTop: "rgba(161,253,255,0.31)",
-    bgGradBottom: "rgba(59,124,227,0.58)",
-    mainBox: "rgba(29,166,215,0.14)",
-    subBox: "rgba(130,242,147,0.14)",
-    helloHeader: "#76B2EB",
-    mainHeader: "#2b98ff",
+    bgGradTop: "rgba(19,214,255,0.38)",
+    bgGradBottom: "rgba(23,142,205,.8)",
+    mainBox: "rgba(36,189,215,0.15)",
+    subBox: "rgba(122,235,191,0.2)",
+    helloHeader: "#77cfc2",
+    mainHeader: "#55a4d9",
     subHeader: "#5590c7",
-    modeButton: "#76B2EB",
+    modeButton: "#94dfc8",
     navButton: "#85C8F4",
   },
   images: {
     profile: "/profile_fish.svg",
   },
   text: {
-    modeButtonText: "Human Mode",
+    modeButtonText: "👸🏻 humanfy",
   },
 };
 
 const humanTheme = {
   colors: {
-    bgGradTop: "rgba(252,208,168,0.42)",
-    bgGradBottom: "rgba(245,151,131,0.53)",
-    mainBox: "rgba(192,105,87,0.15)",
+    bgGradTop: "rgba(252,208,168,0.5)",
+    bgGradBottom: "rgba(245,151,131,0.95)",
+    mainBox: "rgba(255,140,116,0.15)",
     subBox: "rgba(255,245,165,0.27)",
-    helloHeader: "#F59C87",
-    mainHeader: "#ED8269",
+    helloHeader: "#ffd16b",
+    mainHeader: "#ff9b86",
     subHeader: "#b97768",
-    modeButton: "#F9B697",
-    navButton: "#FBA996",
+    modeButton: "#ffd17c",
+    navButton: "#fbca6e",
   },
   images: {
     profile: "/profile_human.jpg",
   },
   text: {
-    modeButtonText: "Fish Mode",
+    modeButtonText: "🎣 fishify",
   },
 };
 
