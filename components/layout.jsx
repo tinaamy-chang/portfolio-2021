@@ -215,6 +215,7 @@ export const ModeButton = styled.a`
   border-radius: 25px;
   box-sizing: border-box;
   transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   &:link {
   }

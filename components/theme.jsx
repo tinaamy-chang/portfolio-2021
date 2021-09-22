@@ -27,7 +27,7 @@ const humanTheme = {
     bgGradBottom: "rgba(245,151,131,0.95)",
     mainBox: "rgba(255,140,116,0.15)",
     subBox: "rgba(255,245,165,0.27)",
-    helloHeader: "#ffd16b",
+    helloHeader: "#ffbe6b",
     mainHeader: "#ff9b86",
     subHeader: "#b97768",
     modeButton: "#ffd17c",
