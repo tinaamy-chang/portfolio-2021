@@ -3,6 +3,8 @@ import Theme from "/components/theme";
 import SimpleReactLightbox from "simple-react-lightbox";
 import Head from "next/head";
 import { Normalize } from "styled-normalize";
+import { AnimatePresence } from "framer-motion";
+import { Router } from "@material-ui/icons";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -77,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
   } 
 `;
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Head>
@@ -87,7 +89,9 @@ function MyApp({ Component, pageProps }) {
         <GlobalStyle />
         <Normalize />
         <SimpleReactLightbox>
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
         </SimpleReactLightbox>
       </Theme>
     </>

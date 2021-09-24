@@ -3,6 +3,7 @@ import styled from "styled-components";
 import HomeIcon from "@material-ui/icons/Home";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const ContentContainer = styled.div`
   position: relative;
