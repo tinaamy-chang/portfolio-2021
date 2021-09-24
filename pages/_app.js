@@ -3,13 +3,12 @@ import Theme from "/components/theme";
 import SimpleReactLightbox from "simple-react-lightbox";
 import Head from "next/head";
 import { Normalize } from "styled-normalize";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Router } from "@material-ui/icons";
 
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
-    transition: all .3s ease-in-out;
   }
 
   html {
@@ -29,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    transition: background-color 1s;
     
 
     @media (max-width: 800px) {
@@ -91,7 +91,15 @@ function MyApp({ Component, pageProps, router }) {
         <Normalize />
         <SimpleReactLightbox>
           <AnimatePresence exitBeforeEnter>
-            <Component {...pageProps} key={router.route} />
+            <motion.div
+              initial="initial"
+              animate="animate"
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.1 }}
+              key={router.route}
+            >
+              <Component {...pageProps} />
+            </motion.div>
           </AnimatePresence>
         </SimpleReactLightbox>
       </Theme>

@@ -1,3 +1,7 @@
+import Link from "next/link";
+import { useThemeSetter } from "../components/theme";
+import { motion } from "framer-motion";
+
 import Layout, {
   HelloText,
   Header,
@@ -19,134 +23,231 @@ import Layout, {
   AboutLinks,
   NoWrap,
 } from "../components/layout";
-import Link from "next/link";
-import { useThemeSetter } from "../components/theme";
-import { motion } from "framer-motion";
+
+let easing = [0.6, -0.05, 0.01, 0.99];
+
+const fadeInDown = {
+  initial: {
+    y: -20,
+    opacity: 0,
+    transition: { duration: 0.3, ease: easing },
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+const firstStagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 export default function Home() {
   const { toggleTheme, text } = useThemeSetter();
 
   return (
-    <motion.div exit={{ opacity: 0 }}>
-      <Layout>
-        <ProfileContainer>
-          <Profile />
-          <Mobile>
+    <Layout>
+      <ProfileContainer>
+        <Profile />
+        <Mobile>
+          <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
             <HelloBox>
-              <HelloText style={{ marginBottom: 30 }}>
-                Hello!
-                <br /> I am Tina Amy Chang 🐟
-              </HelloText>
+              <motion.div variants={fadeInDown}>
+                <HelloText style={{ marginBottom: 30 }}>
+                  Hello!
+                  <br /> I am Tina Amy Chang 🐟
+                </HelloText>
+              </motion.div>
               <ModeButton onClick={toggleTheme}>
                 <NoWrap>{text}</NoWrap>
               </ModeButton>
             </HelloBox>
-          </Mobile>
-        </ProfileContainer>
+          </motion.div>
+        </Mobile>
+      </ProfileContainer>
 
-        <BoxContainer>
+      <BoxContainer>
+        <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
           <Desktop>
-            <HelloBox>
-              <HelloText>
-                Hello!
-                <br /> I am Tina Amy Chang 🐟
-              </HelloText>
-            </HelloBox>
+            <motion.div variants={firstStagger}>
+              <HelloBox>
+                <motion.div variants={fadeInDown}>
+                  <HelloText>
+                    Hello!
+                    <br /> I am Tina Amy Chang 🐟
+                  </HelloText>
+                </motion.div>
+              </HelloBox>
+            </motion.div>
           </Desktop>
           <BoxLeftRightContainer>
             <BoxLeft>
-              <BoxLeftContent>
-                <Header>info</Header>
-                <AboutP>
-                  🖥️ Web Designer
-                  <br />
-                  🧪 Bio-Rad Laboratories
-                  <br />
-                  📍 Bay Area, California
-                </AboutP>
-                <AboutP>
-                  📚 VisCom Design
-                  <br />
-                  🏫 SFSU 2019
-                </AboutP>
-                <AboutP>
-                  Passionate about frontend development combined with UI, UX,
-                  and Graphics.
-                  <br />I design and develop for work and leisure.
-                </AboutP>
-                <AboutP>
-                  This site is developed with ReactJS &amp; NextJS. <br />
-                  <Link href="#" passHref>
-                    <AboutLinks aria-label="link to github" target="_blank">
-                      <NoWrap>Check out the code &#187;</NoWrap>
-                    </AboutLinks>
-                  </Link>
-                </AboutP>
-                <Header>connect</Header>
-                <AboutP>
-                  <Link href="#" passHref>
-                    <AboutLinks aria-label="link to resume" target="_blank">
-                      <NoWrap>📄 Resume &#187;</NoWrap>
-                    </AboutLinks>
-                  </Link>{" "}
-                  &#47;&#47;{" "}
-                  <Link href="https://www.linkedin.com/in/tinastunas" passHref>
-                    <AboutLinks aria-label="link to LinkedIn" target="_blank">
-                      <NoWrap>🌐 LinkedIn &#187;</NoWrap>
-                    </AboutLinks>
-                  </Link>
-                </AboutP>
-                <Header>dig deeper</Header>
-                <AboutP>
-                  <Link href="/archived" passHref>
-                    <AboutLinks aria-label="link to archived designs">
-                      <NoWrap>🗄️ Archived Designs &#187;</NoWrap>
-                    </AboutLinks>
-                  </Link>
-                </AboutP>
-                <AboutP style={{ marginBottom: 35 }}>
-                  <Link href="/illustrationsanimations" passHref>
-                    <AboutLinks aria-label="link to illustrations and animations">
-                      <NoWrap>🖍️ Illustrations/Animations &#187;</NoWrap>
-                    </AboutLinks>
-                  </Link>
-                </AboutP>
-                <Desktop>
-                  <ModeButton onClick={toggleTheme}>
-                    <NoWrap>{text}</NoWrap>
-                  </ModeButton>
-                </Desktop>
-              </BoxLeftContent>
+              <motion.div variants={stagger}>
+                <BoxLeftContent>
+                  <motion.div variants={fadeInDown}>
+                    <Header>info</Header>
+                  </motion.div>
+                  <motion.div variants={fadeInDown}>
+                    <AboutP>
+                      🖥️ Web Designer
+                      <br />
+                      🧪 Bio-Rad Laboratories
+                      <br />
+                      📍 Bay Area, California
+                    </AboutP>
+                    <AboutP>
+                      📚 VisCom Design
+                      <br />
+                      🏫 SFSU 2019
+                    </AboutP>
+                    <AboutP>
+                      Passionate about frontend development combined with UI,
+                      UX, and Graphics.
+                      <br />I design and develop for work and leisure.
+                    </AboutP>
+                    <AboutP>
+                      This site is developed with ReactJS &amp; NextJS. <br />
+                      <Link
+                        href="https://github.com/tinaamy-chang/tinafish#"
+                        passHref
+                      >
+                        <AboutLinks aria-label="link to github" target="_blank">
+                          <NoWrap>Check out the code &#187;</NoWrap>
+                        </AboutLinks>
+                      </Link>
+                    </AboutP>
+                  </motion.div>
+                  <motion.div variants={fadeInDown}>
+                    <Header>connect</Header>
+                  </motion.div>
+                  <motion.div variants={fadeInDown}>
+                    <AboutP>
+                      <Link href="#" passHref>
+                        <AboutLinks aria-label="link to resume" target="_blank">
+                          <NoWrap>📄 Resume &#187;</NoWrap>
+                        </AboutLinks>
+                      </Link>{" "}
+                      &#47;&#47;{" "}
+                      <Link
+                        href="https://www.linkedin.com/in/tinastunas"
+                        passHref
+                      >
+                        <AboutLinks
+                          aria-label="link to LinkedIn"
+                          target="_blank"
+                        >
+                          <NoWrap>🌐 LinkedIn &#187;</NoWrap>
+                        </AboutLinks>
+                      </Link>
+                    </AboutP>
+                    <Header>dig deeper</Header>
+                    <AboutP>
+                      <Link href="/archived" passHref>
+                        <AboutLinks aria-label="link to archived designs">
+                          <NoWrap>🗄️ Archived Designs &#187;</NoWrap>
+                        </AboutLinks>
+                      </Link>
+                    </AboutP>
+                    <AboutP style={{ marginBottom: 35 }}>
+                      <Link href="/illustrationsanimations" passHref>
+                        <AboutLinks aria-label="link to illustrations and animations">
+                          <NoWrap>🖍️ Illustrations/Animations &#187;</NoWrap>
+                        </AboutLinks>
+                      </Link>
+                    </AboutP>
+                  </motion.div>
+                  <motion.div variants={fadeInDown}>
+                    <Desktop>
+                      <motion.div
+                        whileHover={{
+                          scale: 1.01,
+                        }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        <ModeButton onClick={toggleTheme}>
+                          <NoWrap>{text}</NoWrap>
+                        </ModeButton>
+                      </motion.div>
+                    </Desktop>
+                  </motion.div>
+                </BoxLeftContent>
+              </motion.div>
             </BoxLeft>
+
             <BoxRight>
-              <BoxRightBackground />
-              <BoxRightContent>
-                <Header>explore</Header>
-                <Link href="/pathwaystosuccess" passHref>
-                  <ExploreImage
-                    src="/pathwaysbutton.svg"
-                    alt="pathways to success button"
-                  />
-                </Link>
-                <Link href="/testyourknowledge" passHref>
-                  <ExploreImage
-                    src="/tykbutton.svg"
-                    alt="test your knowledge button"
-                  />
-                </Link>
-                <Link href="/widgetlibrary" passHref>
-                  <ExploreImage
-                    src="/widgetbutton.svg"
-                    alt="widget library button"
-                  />
-                </Link>
-                <Link href="/greatbarrierreef" passHref>
-                  <ExploreImage
-                    src="/reefbutton.svg"
-                    alt="what happened to the great barrier reer button"
-                  />
-                </Link>
-              </BoxRightContent>
+              <motion.div variants={stagger}>
+                <BoxRightBackground />
+
+                <BoxRightContent>
+                  <motion.div variants={fadeInDown}>
+                    <Header>explore</Header>
+                  </motion.div>
+                  <motion.div
+                    variants={fadeInDown}
+                    whileHover={{ scale: 1.01 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Link href="/pathwaystosuccess" passHref>
+                      <ExploreImage
+                        src="/pathwaysbutton.svg"
+                        alt="pathways to success button"
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    variants={fadeInDown}
+                    whileHover={{ scale: 1.01 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Link href="/testyourknowledge" passHref>
+                      <ExploreImage
+                        src="/tykbutton.svg"
+                        alt="test your knowledge button"
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    variants={fadeInDown}
+                    whileHover={{ scale: 1.01 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Link href="/widgetlibrary" passHref>
+                      <ExploreImage
+                        src="/widgetbutton.svg"
+                        alt="widget library button"
+                      />
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    variants={fadeInDown}
+                    whileHover={{ scale: 1.01 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Link href="/greatbarrierreef" passHref>
+                      <ExploreImage
+                        src="/reefbutton.svg"
+                        alt="what happened to the great barrier reer button"
+                      />
+                    </Link>
+                  </motion.div>
+                </BoxRightContent>
+              </motion.div>
             </BoxRight>
           </BoxLeftRightContainer>
           {/* <Mobile>
@@ -154,8 +255,8 @@ export default function Home() {
             <NoWrap>{text}</NoWrap>
           </ModeButton>
         </Mobile> */}
-        </BoxContainer>
-      </Layout>
-    </motion.div>
+        </motion.div>
+      </BoxContainer>
+    </Layout>
   );
 }

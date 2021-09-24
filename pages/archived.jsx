@@ -1,11 +1,12 @@
+import styled from "styled-components";
+import Link from "next/link";
+
 import ArchivedImages from "../components/archivedimages";
 import { SubHeader, Video } from "../components/layout";
 import ProjectLayout, {
   FlexContainerColumn,
   FlexContainerRow,
 } from "../components/projectlayout";
-import styled from "styled-components";
-import Link from "next/link";
 
 const BunLifeButtonImg = styled.img`
   display: block;

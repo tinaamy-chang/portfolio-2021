@@ -1,3 +1,6 @@
+import styled from "styled-components";
+import { SRLWrapper } from "simple-react-lightbox";
+
 import ProjectLayout, {
   FlexContainerColumn,
   FlexContainerRow,
@@ -5,8 +8,6 @@ import ProjectLayout, {
   VideoBullets,
 } from "../components/projectlayout";
 import { SubHeader, Video } from "../components/layout";
-import styled from "styled-components";
-import { SRLWrapper } from "simple-react-lightbox";
 
 const WidgetGif = styled.img`
   max-width: 200px;

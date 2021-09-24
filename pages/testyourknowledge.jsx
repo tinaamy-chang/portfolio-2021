@@ -1,6 +1,7 @@
+import { SRLWrapper } from "simple-react-lightbox";
+
 import { SubHeader } from "../components/layout";
 import ProjectLayout, { FullImg } from "../components/projectlayout";
-import { SRLWrapper } from "simple-react-lightbox";
 
 function TestYourKnowledge() {
   return (

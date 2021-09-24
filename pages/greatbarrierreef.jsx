@@ -1,11 +1,12 @@
+import styled from "styled-components";
+import { SRLWrapper } from "simple-react-lightbox";
+
 import { SubHeader } from "../components/layout";
 import ProjectLayout, {
   FlexContainerColumn,
   Bullets,
   FullImg,
 } from "../components/projectlayout";
-import styled from "styled-components";
-import { SRLWrapper } from "simple-react-lightbox";
 
 const ReefHalfImg = styled.img`
   max-width: 30%;

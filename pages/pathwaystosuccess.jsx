@@ -1,3 +1,6 @@
+import styled from "styled-components";
+import { SRLWrapper } from "simple-react-lightbox";
+
 import { SubHeader } from "../components/layout";
 import ProjectLayout, {
   FlexContainerColumn,
@@ -5,8 +8,6 @@ import ProjectLayout, {
   FullImgNoShadow,
   Bullets,
 } from "../components/projectlayout";
-import styled from "styled-components";
-import { SRLWrapper } from "simple-react-lightbox";
 
 const FullImgPart = styled.img`
   max-width: 70%;

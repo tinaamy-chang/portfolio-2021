@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -13,6 +14,7 @@ export const ProfileContainer = styled.div`
   margin-left: 20px;
   width: 15%;
   position: relative;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 800px) {
     width: 100%;
@@ -33,6 +35,7 @@ export const NoWrap = styled.span`
 export const BoxContainer = styled.div`
   width: 85%;
   right: 0;
+  transition: all 0.3s ease-in-out;
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -45,6 +48,7 @@ export const HelloBox = styled.div`
   margin: 15px 65px;
   line-height: 1.2;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 800px) {
     width: 100%;
@@ -60,6 +64,7 @@ export const HelloText = styled.h1`
   font-weight: 600;
   color: ${(props) => props.theme.colors.helloHeader};
   margin: 0;
+  transition: all 0.3s ease-in-out;
 `;
 
 export const Header = styled.h2`
@@ -67,6 +72,7 @@ export const Header = styled.h2`
   margin: 0 0 10px 0;
   font-weight: 600;
   color: ${(props) => props.theme.colors.mainHeader};
+  transition: all 0.3s ease-in-out;
 `;
 
 export const SubHeader = styled.h3`
@@ -81,6 +87,7 @@ export const BoxLeftRightContainer = styled.div`
   flex-direction: row;
   align-items: space-between;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -93,6 +100,8 @@ export const BoxLeft = styled.div`
   border-radius: 5px;
   padding-right: 50px;
   margin-top: -60px;
+  transition: background-color 0.5s;
+
   @media (max-width: 800px) {
     width: 100%;
     padding-right: 0;
@@ -102,6 +111,7 @@ export const BoxLeft = styled.div`
 
 export const BoxLeftContent = styled.div`
   padding: 65px 70px 80px 70px;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 1500px) {
     margin: 0;
@@ -118,6 +128,7 @@ export const BoxRight = styled.div`
   position: relative;
   right: 0;
   margin-left: -100px;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 800px) {
     width: 100%;
@@ -139,6 +150,7 @@ export const BoxRightBackground = styled.div`
   border-radius: 5px;
   z-index: -1;
   pointer-events: none;
+  transition: background-color 0.5s;
 
   @media (max-width: 800px) {
     top: 0;
@@ -158,6 +170,7 @@ export const BoxRightContent = styled.div`
   left: 0;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 1500px) {
     margin: 0;
@@ -253,6 +266,7 @@ export const Profile = styled.div`
   background-size: contain;
   width: 115%;
   height: 100%;
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 800px) {
     height: auto;
@@ -278,7 +292,7 @@ export const ExploreImage = styled.img`
   @media (hover: hover) and (pointer: fine) {
     &:hover {
       cursor: pointer;
-      width: 100.5%;
+      /* width: 100.5%; */
       transition: box-shadow 300ms cubic-bezier(0.2, 0, 0.7, 1),
         transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
       box-shadow: 0 0 1px 5px rgba(255, 255, 255, 1),
@@ -300,6 +314,8 @@ export const Video = styled.div`
   width: 40%;
   padding-top: 25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   margin: 20px 0;
+  transition: all 0.3s ease-in-out;
+
   > iframe {
     position: absolute;
     top: 0;
