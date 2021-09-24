@@ -177,6 +177,7 @@ export const AboutP = styled.p`
 `;
 
 export const AboutLinks = styled.a`
+  font-weight: 500;
   text-decoration: none;
   color: #4d4d4d;
   transition: 0.2s;

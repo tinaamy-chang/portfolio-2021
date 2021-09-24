@@ -56,13 +56,13 @@ export default function Home() {
           <BoxLeftRightContainer>
             <BoxLeft>
               <BoxLeftContent>
-                <Header>learn</Header>
+                <Header>info</Header>
                 <AboutP>
                   🖥️ Web Designer
                   <br />
                   🧪 Bio-Rad Laboratories
                   <br />
-                  📍 Bay Area
+                  📍 Bay Area, California
                 </AboutP>
                 <AboutP>
                   📚 VisCom Design
@@ -73,6 +73,14 @@ export default function Home() {
                   Passionate about frontend development combined with UI, UX,
                   and Graphics.
                   <br />I design and develop for work and leisure.
+                </AboutP>
+                <AboutP>
+                  This site is developed with ReactJS &amp; NextJS. <br />
+                  <Link href="#" passHref>
+                    <AboutLinks aria-label="link to github" target="_blank">
+                      <NoWrap>Check out the code &#187;</NoWrap>
+                    </AboutLinks>
+                  </Link>
                 </AboutP>
                 <Header>connect</Header>
                 <AboutP>

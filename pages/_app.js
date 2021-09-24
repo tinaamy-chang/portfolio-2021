@@ -9,6 +9,7 @@ import { Router } from "@material-ui/icons";
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
+    transition: all .3s ease-in-out;
   }
 
   html {
