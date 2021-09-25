@@ -3,13 +3,12 @@ import { ThemeProvider } from "styled-components";
 
 const fishTheme = {
   colors: {
-    bgGradTop: "rgba(19,214,255,0.38)",
-    bgGradBottom: "rgba(23,142,205,.8)",
-    mainBox: "rgba(36,189,215,0.15)",
-    subBox: "rgba(122,235,191,0.2)",
+    bgGradTop: "rgba(19,214,255,0.5)",
+    bgGradBottom: "rgba(0,146,209,0.9)",
+    mainBox: "rgba(0,143,190,0.1)",
+    subBox: "rgba(50,191,191,0.3)",
     helloHeader: "#77cfc2",
-    mainHeader: "#55a4d9",
-    subHeader: "#5590c7",
+    mainHeader: "#2798cc",
     modeButton: "#94dfc8",
     navButton: "#85C8F4",
   },
@@ -29,9 +28,7 @@ const humanTheme = {
     subBox: "rgba(255,245,165,0.27)",
     helloHeader: "#ffbe6b",
     mainHeader: "#ff9b86",
-    subHeader: "#b97768",
     modeButton: "#ffd17c",
-    navButton: "#fbca6e",
   },
   images: {
     profile: "/profile_human.jpg",

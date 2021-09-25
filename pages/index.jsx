@@ -46,14 +46,14 @@ const stagger = {
   animate: {
     transition: {
       staggerChildren: 0.2,
-      delayChildren: 0.3,
+      delayChildren: 0.2,
     },
   },
 };
 const firstStagger = {
   animate: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.15,
     },
   },
 };

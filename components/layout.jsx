@@ -253,10 +253,6 @@ export const ModeButton = styled.a`
   }
 `;
 
-export const NavButton = styled.a`
-  background: ${(props) => props.theme.colors.navButton};
-`;
-
 export const BoxWrapper = styled.div`
   background: ${(props) => props.theme.colors.mainBox};
 `;
