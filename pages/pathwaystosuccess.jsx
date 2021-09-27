@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { SRLWrapper } from "simple-react-lightbox";
+import Link from "next/link";
 
-import { SubHeader } from "../components/layout";
+import { SubHeader, AboutLinks } from "../components/layout";
 import ProjectLayout, {
   FlexContainerColumn,
   FullImg,
@@ -42,9 +43,14 @@ function PathwaysToSuccess() {
           Pathways to Success, rebranded as Pathways, is an educational program
           for 8th graders run by faculty memebrs of the University of Southern
           California (USC) and the American Insitutes for Resarch (AIR). I was
-          subcontracted by Wrasse LLC to help design and build a landing page,
-          new branding, the educational platform, and dashboards for the
-          program.
+          subcontracted by{" "}
+          <Link href="https://wrasse.co" passHref>
+            <AboutLinks aria-label="link to Wrasse Co" target="_blank">
+              Wrasse LLC
+            </AboutLinks>
+          </Link>{" "}
+          to help design and build a landing page, new branding, the educational
+          platform, and dashboards for the program.
         </p>
         <SubHeader>old website and branding</SubHeader>
         <FlexContainerColumn>

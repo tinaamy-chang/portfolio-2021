@@ -36,11 +36,10 @@ function GreatBarrier() {
     <ProjectLayout projectname="What Happened to the Great Barrier Reef?">
       <SRLWrapper>
         <p>
-          What Happened to the Great Barrier reef is a large poster (30&quot; x
-          40&quot;) about the Great Barrier Reef. It visualizes data in the form
-          of different graphs in order to tell a story of the past,
-          present(2018), and future of what is happening to the Great Barrier
-          Reef.
+          What Happened to the Great Barrier reef is a large infographic meant
+          to be printed on a poster (30&quot; x 40&quot;) about the Great
+          Barrier Reef. It presents the story of the past, present (2018), and
+          future of the Great Barrier Reef as a series of data visualizations.
         </p>
         <SubHeader>project proposal</SubHeader>
         <FlexContainerColumn>
@@ -50,21 +49,19 @@ function GreatBarrier() {
                 <strong>Original Topic:</strong> Coral Reefs
               </li>
               <li>
-                <strong>Vision:</strong> I want to create a visualization on
-                spreading awareness that coral reefs are disappearing. Through
-                preliminary research I found three main things that are
-                currently affecting the life of coral reefs&mdash; overfishing,
-                warming waters (global warming), and pollution. Ideally, I would
-                like to find statistics on different sizes of reefs and zoom in
-                on how some of them have changed in the last (10?) years through
-                size, animals that rely on that ecosystem, etc.
+                <strong>Vision:</strong>I care deeply about the health of our
+                oceans and wanted to highlight the decline of coral reefs around
+                the world in the face of overfishing, global warming, and
+                pollution. To do this, I wanted to use statistics gathered on a
+                diverse array of reefs ranging in size, ecosystems, and history
+                over the last ten years to build my narrative.
               </li>
               <li>
-                <strong>Goals to Visualize:</strong>
+                <strong>Story:</strong>
                 <ol>
-                  <li>Coral reefs dying</li>
-                  <li>Coral reefs are home to many living animals</li>
-                  <li>How we/you can help</li>
+                  <li>Coral reefs around the world are dying</li>
+                  <li>Coral reefs provide a home to many species</li>
+                  <li>How we can help</li>
                 </ol>
               </li>
             </ul>
@@ -82,11 +79,15 @@ function GreatBarrier() {
           />
           <Bullets>
             <p>
-              <strong>Topic Change:</strong> Unfortunately, as I dug into
-              researching, I was unable to find reputable data about the state
-              of coral reefs around the world. Instead, I had found some
-              interesting data on the Great Barrier Reef&apos;s health that I
-              decided to focus on for this poster.
+              <strong>Topic Change:</strong>
+              Unfortunately, it was difficult to find reputable data on the
+              state of coral reefs around the world. Many reefs were not
+              observed consistently, producing sparse data that would be
+              difficult to use in visualizations or might mislead the audience.
+              Fortunately, the health of the Great Barrier Reef is extremely
+              well documented, as it is the largest reef in the world &mdash; I
+              decided that the Great Barrier Reef would be the focus of my
+              poster.
             </p>
           </Bullets>
         </FlexContainerColumn>
@@ -100,10 +101,10 @@ function GreatBarrier() {
               <strong>Mid-Point Peer Review Critiques:</strong>
             </p>
             <ul>
-              <li>Competeting hierarcy of the most important information</li>
-              <li>what would go on the timeline? where should it go?</li>
+              <li>Competing hierarchy of information</li>
+              <li>What would go on the timeline? Where should it go?</li>
               <li>
-                The recent data for the bleaching evednt in 2016 should be
+                The recent data for the bleaching event in 2016 should be
                 bigger, especially the map. Maps are attractive.
               </li>
             </ul>

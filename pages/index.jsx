@@ -140,12 +140,13 @@ export default function Home() {
                   </motion.div>
                   <motion.div variants={fadeInDown}>
                     <AboutP>
-                      <Link href="#" passHref>
+                      <Link href="/Tchang_resume_2021.pdf" passHref>
                         <AboutLinks aria-label="link to resume" target="_blank">
                           <NoWrap>📄 Resume &#187;</NoWrap>
                         </AboutLinks>
-                      </Link>{" "}
-                      &#47;&#47;{" "}
+                      </Link>
+                    </AboutP>
+                    <AboutP>
                       <Link
                         href="https://www.linkedin.com/in/tinastunas"
                         passHref

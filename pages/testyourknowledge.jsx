@@ -10,33 +10,35 @@ function TestYourKnowledge() {
         Test Your Knowledge is a global educational campaign built for
         Bio-Rad&apos;s Diabetes and Hemoglobin Testing Marketing team. This
         digital campaign consists of a landing page, case studies, webinar, and
-        several introductory emails. Additonal emails are sent whenever new case
-        studies or content is released.
+        several introductory emails. Additional emails are sent to targeted
+        smailing lists whenever new case studies or content is released.
       </p>
       <SubHeader>scope</SubHeader>
       <ul>
         <li>
-          <strong>Users:</strong> Existing Bio-Rad Diabetes and Hemoglobin
+          <strong>Audience:</strong> Existing Bio-Rad Diabetes and Hemoglobin
           Testing customers
         </li>
         <li>
-          <strong>What We Know:</strong> There has been a lot of interest from
-          Bio-Rad customers about learning about how understand unusual
-          hemoglobin variants that appear on their chromatograms from Marco
-          Flamini, a Bio-Rad product manager and Hemoglobinopathies expert. He
-          has created the Library of Variants tool that helps them evalutate
-          chromatograms but not everyone knows how to use it.
+          <strong>Premise:</strong> There has been a lot of interest from
+          Bio-Rad customers to learn to understand unusual hemoglobin variants
+          that appear on their chromatograms. Marco Flamini, a Bio-Rad product
+          manager is a Hemoglobinopathies expert. He created the Library of
+          Variants, a tool that helps customers evalutate chromatograms.
+          However, not all customers have learned how to use it.
         </li>
         <li>
-          <strong>Goal:</strong> Build an educational page that highlights the
-          Library of Variants by having a demo video and various case studies
-          that use it. Essentially, an one stop shop for tools to help customers
-          easily evaluate their chromatograms.
+          <strong>Goal:</strong> Build an educational page to highlight the
+          Library of Variants. The page features a demo video and various case
+          study videos narrated by Marco Flamini. Essentially, an one stop shop
+          of informational material to help customers easily evaluate their
+          chromatograms and learn more about the Library of Variants.
         </li>
         <li>
-          <strong>Campaign Goal:</strong> Retain customers and see who in their
-          existing customer base are interested in Bio-Rad Diabetes and
-          Hemoglobin Testing content.
+          <strong>Campaign Goals:</strong> Retain customers by improving their
+          experience with Bio-Rad&apos;s chromatograms. Gather engagement
+          metrics for the Diabetes and Hemoglobin Marketing team&apos;s existing
+          customers.
         </li>
       </ul>
       <SubHeader>final</SubHeader>

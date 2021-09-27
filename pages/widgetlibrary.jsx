@@ -27,13 +27,12 @@ function WidgetLibrary() {
     <ProjectLayout projectname="Widget Library">
       <SRLWrapper>
         <p>
-          The Widget Library is a web application built at Bio-Rad to help sales
-          representatives qusickly build personalized and targeted
-          communications for their customers. It is a library of clickable
-          banners that link to Bio-Rad landing pages. There is no need to
-          download and save the images, as they are easy to copy from the
-          library, paste into an email, and send with the intended link still
-          attached.
+          The Widget Library is a web application I built at Bio-Rad. It helps
+          sales representatives quickly build personalized and targeted
+          communications for their customers by providing them with a library of
+          interactive marketing materials that link to Bio-Rad landing pages.
+          They no longer have to download, save, and organize marketing
+          graphics. The materials are all in one place and always up to date.
         </p>
         <FlexContainerRow>
           <WidgetGif src="/widget_copy.gif" alt="Copy GIF" />
@@ -43,24 +42,25 @@ function WidgetLibrary() {
         <SubHeader>scope</SubHeader>
         <ul>
           <li>
-            <strong>User:</strong> Bio-Rad Marketing &#38; Sales
+            <strong>Audience:</strong> Bio-Rad Marketing &#38; Sales
           </li>
           <li>
             <strong>Problem:</strong> Marketing has many product, event,
             awareness, and educational landing pages that they want Sales to use
-            more. Sales is looking for a new way to appeal to and engage their
-            customers with Bio-Rad content/landing pages. How do we marry the
-            two?
+            more. Sales is looking for a new ways to appeal to and engage their
+            customers with Bio-Rad content and landing pages. How do we marry
+            the two?
           </li>
           <li>
-            <strong>Solution:</strong> Build a library of banners AKA
-            &quot;widgets&quot; that sales can place into their emails for
-            customers to learn more about Bio-Rad products by incentivizing
-            customers to click the widget that links to a landing page.
+            <strong>Solution:</strong> Build a library of graphics, referred to
+            internally as Widgets, that Sales can place into their emails to
+            drive customer engagement with materials that Marketing has
+            produced.
           </li>
           <li>
-            <strong>Keywords:</strong> quick, easy, visually-appealing, how can
-            we make copy and pasting have minimal error?
+            <strong>Key Ideas:</strong> It should be quick and easy for Sales to
+            create visually appealing emails using Marketing Widgets with
+            mininmal error.
           </li>
         </ul>
         <SubHeader>wireframes</SubHeader>
@@ -101,7 +101,7 @@ function WidgetLibrary() {
           </Video>
           <VideoBullets>
             <p>
-              <strong>Comments:</strong>
+              <strong>Feedback:</strong>
             </p>
             <ul>
               <li>Straightforward to navigate</li>
@@ -130,7 +130,7 @@ function WidgetLibrary() {
           </Video>
           <VideoBullets>
             <p>
-              <strong>Comments:</strong>
+              <strong>Feedback:</strong>
             </p>
             <ul>
               <li>
