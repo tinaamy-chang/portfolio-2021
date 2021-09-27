@@ -9,10 +9,7 @@ function IllustrationsAnimations() {
   return (
     <ProjectLayout projectname="Illustrations and Animations Gallery">
       <SubHeader>Animations</SubHeader>
-      <p>
-        Animations and Illustrations done for fun, with purpose, or for
-        practice.
-      </p>
+      <p>Animations and Illustrations done for fun or for practice.</p>
       <FlexContainerColumn>
         <Video>
           <iframe

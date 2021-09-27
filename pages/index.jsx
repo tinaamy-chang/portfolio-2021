@@ -117,12 +117,14 @@ export default function Home() {
                       🏫 SFSU 2019
                     </AboutP>
                     <AboutP>
-                      Passionate about frontend development combined with UI,
-                      UX, and Graphics.
+                      Passionate about frontend development, UI, UX, and
+                      Graphics.
                       <br />I design and develop for work and leisure.
                     </AboutP>
                     <AboutP>
-                      This site is developed with ReactJS &amp; NextJS. <br />
+                      This site was created with ReactJS, NextJS, &amp; Styled
+                      Components.
+                      <br />
                       <Link
                         href="https://github.com/tinaamy-chang/tinafish#"
                         passHref

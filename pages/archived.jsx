@@ -49,9 +49,9 @@ function Archived() {
   return (
     <ProjectLayout projectname="Archived Designs Gallery">
       <p>
-        Design projects that are not at part of my main portfolio but I find
-        relevant in displaying more of my skillset. Feel free to ask about any
-        that pique your inerest.
+        Design projects that are not part of my main portfolio but were
+        particularly fun or challenging to work on. Feel free to ask about any
+        that pique your interest.
       </p>
       <FlexContainerColumn>
         <Video>

@@ -28,6 +28,10 @@ function ArchivedImages() {
         <Tile src="/archived_devaworld.jpg" alt="Deva World Poster" />
       </a>
 
+      <a href="/archived_stardog.jpeg">
+        <Tile src="/archived_stardog.jpeg" alt="Stardog, a dog plush" />
+      </a>
+
       <a href="/archived_lyme.gif">
         <Tile src="/archived_lyme.gif" alt="Lyme Total Email Signature Gif" />
       </a>
@@ -53,10 +57,6 @@ function ArchivedImages() {
 
       <a href="/archived_ruth2.jpg">
         <Tile src="/archived_ruth2.jpg" alt="Ruth Asawa Logo 2" />
-      </a>
-
-      <a href="/archived_stardog.jpeg">
-        <Tile src="/archived_stardog.jpeg" alt="Stardog, a dog plush" />
       </a>
     </SRLWrapper>
   );

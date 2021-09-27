@@ -40,10 +40,10 @@ function PathwaysToSuccess() {
       <SRLWrapper>
         <p>
           Pathways to Success, rebranded as Pathways, is an educational program
-          for 8th gaders run by faculty memebrs of the University of Southern
+          for 8th graders run by faculty memebrs of the University of Southern
           California (USC) and the American Insitutes for Resarch (AIR). I was
-          contracted by Wrasse to help build a new website, design new branding,
-          design the educational platform, and design a dashboard for the
+          subcontracted by Wrasse LLC to help design and build a landing page,
+          new branding, the educational platform, and dashboards for the
           program.
         </p>
         <SubHeader>old website and branding</SubHeader>
@@ -54,7 +54,7 @@ function PathwaysToSuccess() {
           />
           <Bullets>
             <p>These are screenshots of the old Pathways to Success site.</p>
-            <p>Problems that the clients needed addressed were:</p>
+            <p>Clients had the following goals for the overhaul:</p>
             <ul>
               <li>An attractive landing page</li>
               <li>Easier Navigation from page to page</li>
@@ -67,12 +67,15 @@ function PathwaysToSuccess() {
         </FlexContainerColumn>
         <SubHeader>branding</SubHeader>
         <p>
-          For the colors, we worked through several colors before deciding to
-          align with USC&apos;s branding in order to maintain USC&apos;s
-          association with Pathways. For the logo, we worked through several
-          iterations before the client ultimately thought it was not the right
-          time to completely rebrand. We reused the original{" "}
-          <em>Pathways to Success</em> logo but modernedized it.
+          For the brand colors, we worked through several palettes before
+          deciding to compliment USC&apos;s branding in order to strengthen the
+          visual association between USC and Pathways. For the logo, we worked
+          through several iterations before the client ultimately decided it was
+          not the right time to completely rebrand. We reused the original{" "}
+          <em>Pathways to Success</em> logo but modernized it by distilling the
+          logo to its essentials. I identified that the most important parts of
+          the logo were the wordmark and the arrow which symbolizes the growth
+          and progression of students.
         </p>
         <FullImgPart src="/pathways_branding.png" alt="Branding" />
         <SubHeader>wireframing</SubHeader>
