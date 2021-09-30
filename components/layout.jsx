@@ -64,6 +64,7 @@ export const HelloBox = styled.div`
 
 export const HelloText = styled.h1`
   font-size: 1.8rem;
+  text-shadow: -2px 2.5px ${(props) => props.theme.colors.hellotextShadow};
   font-weight: 600;
   /* color: ${(props) => props.theme.colors.helloHeader}; */
   color: white;
@@ -84,7 +85,7 @@ export const SubHeader = styled.h3`
   margin: 10px 0 5px 0;
   font-weight: 400;
   color: white;
-  text-shadow: -0.6px 0.6px ${(props) => props.theme.colors.textShadow};
+  text-shadow: -1px 1px ${(props) => props.theme.colors.textShadow};
 `;
 
 export const BoxLeftRightContainer = styled.div`
