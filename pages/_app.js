@@ -76,7 +76,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     line-height: 1.5;
-    text-shadow: 1px 1px ${(props) => props.theme.colors.textShadow};
+    text-shadow: -1px 1px ${(props) => props.theme.colors.textShadow};
   }
 
   p > strong, ul > li > strong{
