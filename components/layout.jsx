@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 export const ProfileContainer = styled.div`
-  margin-top: -40px;
+  margin-top: -20px;
   margin-left: 20px;
   width: 15%;
   position: relative;
@@ -44,13 +44,13 @@ export const HelloBox = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.helloBox};
   position: relative;
   padding: 10px 45px 15px 45px;
   border-radius: 5px;
   margin: 15px 65px;
   line-height: 1.2;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.6px;
   transition: all 0.3s ease-in-out;
 
   @media (max-width: 800px) {
@@ -65,7 +65,8 @@ export const HelloBox = styled.div`
 export const HelloText = styled.h1`
   font-size: 1.8rem;
   font-weight: 600;
-  color: ${(props) => props.theme.colors.helloHeader};
+  /* color: ${(props) => props.theme.colors.helloHeader}; */
+  color: white;
   transition: all 0.3s ease-in-out;
   margin-right: 50px;
 `;
@@ -82,7 +83,8 @@ export const SubHeader = styled.h3`
   font-size: 1.8rem;
   margin: 10px 0 5px 0;
   font-weight: 400;
-  color: #4d4d4d;
+  color: white;
+  text-shadow: -0.6px 0.6px ${(props) => props.theme.colors.textShadow};
 `;
 
 export const BoxLeftRightContainer = styled.div`
@@ -195,19 +197,21 @@ export const AboutP = styled.p`
 export const AboutLinks = styled.a`
   font-weight: 500;
   text-decoration: none;
-  color: #4d4d4d;
+  color: white;
+  text-shadow: -1.5px 1.5px ${(props) => props.theme.colors.textShadow};
+
   transition: 0.2s;
   &:link {
-    color: #4d4d4d;
+    color: white;
   }
   &:visited {
-    color: #4d4d4d;
+    color: white;
   }
   @media (hover: hover) and (pointer: fine) {
     &:hover {
       /* color: #222526; */
       cursor: pointer;
-      color: #4d4d4d;
+      color: white;
       border-radius: 20px;
       background-color: white;
       color: ${(props) => props.theme.colors.modeButton};

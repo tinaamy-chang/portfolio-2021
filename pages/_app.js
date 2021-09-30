@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
-    color: #4d4d4d;
+    color: white;
     font-weight: 400;
     min-height: 100vh;
     background: linear-gradient(
@@ -48,15 +48,18 @@ const GlobalStyle = createGlobalStyle`
   ul > li {
     list-style-type: circle;
     line-height: 1.5;
+    text-shadow: -0.8px 0.8px ${(props) => props.theme.colors.textShadow};
   }
 
 
   div#__next,
       div#__next > div
       {
-        margin: 50px 0;
-        color: #4d4d4d;
-        font-weight: 400;
+        
+        margin: 40px 0;
+        color: white;
+        letter-spacing: 0.25px;
+        font-weight: 300;
         box-sizing: border-box;
         width: 100%;
         max-width: 1200px;
@@ -73,6 +76,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     line-height: 1.5;
+    text-shadow: -0.8px 0.8px ${(props) => props.theme.colors.textShadow};
   }
 
   p > strong, ul > li > strong{
