@@ -64,7 +64,8 @@ export const HelloBox = styled.div`
 
 export const HelloText = styled.h1`
   font-size: 1.8rem;
-  text-shadow: -2px 2.5px ${(props) => props.theme.colors.hellotextShadow};
+  /* text-shadow: -2px 2.5px ${(props) =>
+    props.theme.colors.hellotextShadow}; */
   font-weight: 600;
   /* color: ${(props) => props.theme.colors.helloHeader}; */
   color: white;
@@ -84,8 +85,8 @@ export const SubHeader = styled.h3`
   font-size: 1.8rem;
   margin: 10px 0 5px 0;
   font-weight: 400;
-  color: white;
-  text-shadow: -1px 1px ${(props) => props.theme.colors.textShadow};
+  color: #4d4d4d;
+  /* text-shadow: -1px 1px ${(props) => props.theme.colors.textShadow}; */
 `;
 
 export const BoxLeftRightContainer = styled.div`
@@ -198,21 +199,20 @@ export const AboutP = styled.p`
 export const AboutLinks = styled.a`
   font-weight: 500;
   text-decoration: none;
-  color: white;
-  text-shadow: -1.5px 1.5px ${(props) => props.theme.colors.textShadow};
+  color: #4d4d4d;
+  /* text-shadow: -1.5px 1.5px ${(props) => props.theme.colors.textShadow}; */
 
   transition: 0.2s;
   &:link {
-    color: white;
+    color: #4d4d4d;
   }
   &:visited {
-    color: white;
+    color: #4d4d4d;
   }
   @media (hover: hover) and (pointer: fine) {
     &:hover {
       /* color: #222526; */
       cursor: pointer;
-      color: white;
       border-radius: 20px;
       background-color: white;
       color: ${(props) => props.theme.colors.modeButton};

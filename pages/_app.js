@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
-    color: white;
+    color: #4d4d4d;
     font-weight: 400;
     min-height: 100vh;
     background: linear-gradient(
@@ -48,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
   ul > li {
     list-style-type: circle;
     line-height: 1.5;
-    text-shadow: -1px 1px ${(props) => props.theme.colors.textShadow};
+    /* text-shadow: -1px 1px ${(props) => props.theme.colors.textShadow}; */
   }
 
 
@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
       {
         
         margin: 40px 0;
-        color: white;
+        color: #4d4d4d;
         letter-spacing: 0.25px;
         font-weight: 300;
         box-sizing: border-box;
@@ -76,11 +76,11 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     line-height: 1.5;
-    text-shadow: -1px 1px ${(props) => props.theme.colors.textShadow};
+    /* text-shadow: -1px 1px ${(props) => props.theme.colors.textShadow}; */
   }
 
   p > strong, ul > li > strong{
-    font-weight: 600;
+    font-weight: 500;
   } 
 `;
 
