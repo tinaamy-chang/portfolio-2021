@@ -122,7 +122,7 @@ export default function Home() {
                     <AboutP>
                       🖥️&nbsp;&nbsp;Web Designer
                       <br />
-                      🧪 Bio-Rad Laboratories
+                      🧪&nbsp;&nbsp;Bio-Rad Laboratories
                       <br />
                       📍&nbsp;&nbsp;Bay Area, California
                     </AboutP>
@@ -157,7 +157,7 @@ export default function Home() {
                     <AboutP>
                       <Link href="/Tchang_resume_2021.pdf" passHref>
                         <AboutLinks aria-label="link to resume" target="_blank">
-                          <NoWrap>📄 Resume &#187;</NoWrap>
+                          <NoWrap>📄&nbsp;&nbsp;Resume &#187;</NoWrap>
                         </AboutLinks>
                       </Link>
                     </AboutP>

@@ -33,6 +33,7 @@ const UsageImg = styled.img`
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   @media (max-width: 800px) {
     max-width: 100%;
+    margin: 20px 0;
   }
   &:hover {
     cursor: pointer;
