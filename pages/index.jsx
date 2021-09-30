@@ -120,16 +120,16 @@ export default function Home() {
                   </motion.div>
                   <motion.div variants={fadeInDown}>
                     <AboutP>
-                      🖥️ Web Designer
+                      🖥️&nbsp;&nbsp;Web Designer
                       <br />
                       🧪 Bio-Rad Laboratories
                       <br />
-                      📍 Bay Area, California
+                      📍&nbsp;&nbsp;Bay Area, California
                     </AboutP>
                     <AboutP>
-                      📚 VisCom Design
+                      📚&nbsp;&nbsp;VisCom Design
                       <br />
-                      🏫 SFSU 2019
+                      🏫&nbsp;&nbsp;SFSU 2019
                     </AboutP>
                     <AboutP>
                       Passionate about frontend development, UI, UX, and
@@ -170,7 +170,7 @@ export default function Home() {
                           aria-label="link to LinkedIn"
                           target="_blank"
                         >
-                          <NoWrap>🌐 LinkedIn &#187;</NoWrap>
+                          <NoWrap>🌐&nbsp;&nbsp;LinkedIn &#187;</NoWrap>
                         </AboutLinks>
                       </Link>
                     </AboutP>
@@ -178,14 +178,16 @@ export default function Home() {
                     <AboutP>
                       <Link href="/archived" passHref>
                         <AboutLinks aria-label="link to archived designs">
-                          <NoWrap>🗄️ Archived Designs &#187;</NoWrap>
+                          <NoWrap>🗄️&nbsp;&nbsp;Archived Designs &#187;</NoWrap>
                         </AboutLinks>
                       </Link>
                     </AboutP>
                     <AboutP style={{ marginBottom: 35 }}>
                       <Link href="/illustrationsanimations" passHref>
                         <AboutLinks aria-label="link to illustrations and animations">
-                          <NoWrap>🖍️ Illustrations/Animations &#187;</NoWrap>
+                          <NoWrap>
+                            🖍️&nbsp;&nbsp;Illustrations/Animations &#187;
+                          </NoWrap>
                         </AboutLinks>
                       </Link>
                     </AboutP>
