@@ -100,7 +100,7 @@ export default function Home() {
                         scale: 1.01,
                       }}
                       whileTap={{ scale: 0.98 }}
-                      style={{ marginTop: 10, marginBottom: 10 }}
+                      style={{ marginTop: 5, marginBottom: 30 }}
                     >
                       <ModeButton onClick={toggleTheme}>
                         <NoWrap>{text}</NoWrap>

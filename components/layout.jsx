@@ -41,12 +41,12 @@ export const BoxContainer = styled.div`
 `;
 export const HelloBox = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: white;
   position: relative;
-  padding: 20px 50px;
+  padding: 10px 45px 15px 45px;
   border-radius: 5px;
   margin: 15px 65px;
   line-height: 1.2;
@@ -57,7 +57,7 @@ export const HelloBox = styled.div`
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 25px 25px 30px 25px;
+    padding: 10px 25px 30px 25px;
     box-sizing: border-box;
   }
 `;
