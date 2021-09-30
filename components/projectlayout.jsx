@@ -53,6 +53,18 @@ export const FlexContainerRow = styled.div`
   align-items: flex-start;
 `;
 
+export const FlexContainerGallery = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+`;
+
 const BackButton = styled.a`
   top: 0;
   left: 0;
@@ -123,12 +135,18 @@ export const FullImg = styled.img`
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: white;
   transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const FullImgNoShadow = styled.img`
   max-width: 100%;
   height: auto;
   transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const VideoBullets = styled.div`

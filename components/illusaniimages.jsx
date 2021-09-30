@@ -12,6 +12,9 @@ const Tile = styled.img`
     width: 120px;
     height: 120px;
   }
+  &:hover {
+    cursor: pointer;
+  }
 `;
 function ArchivedImages() {
   return (

@@ -7,7 +7,7 @@ import ProjectLayout, {
   FullImgNoShadow,
   VideoBullets,
 } from "../components/projectlayout";
-import { SubHeader, Video } from "../components/layout";
+import { SubHeader } from "../components/layout";
 
 const WidgetGif = styled.img`
   max-width: 200px;
@@ -19,6 +19,57 @@ const WidgetGif = styled.img`
   @media (max-width: 800px) {
     max-width: 150px;
     min-width: 75px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+const UsageImg = styled.img`
+  max-width: 280px;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+const DemoScreenshotsImg = styled.img`
+  max-width: 200px;
+  margin-bottom: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+const FlexDirectionColumn = styled.div`
+  flex-direction: column;
+`;
+
+export const DemoVideo = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 63%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  margin: 20px 0;
+  transition: all 0.3s ease-in-out;
+
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
 `;
 
@@ -88,17 +139,31 @@ function WidgetLibrary() {
         />
         <SubHeader>version 1.0 demo video: hi-fi prototype </SubHeader>
         <FlexContainerColumn>
-          <Video>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/hoxgN3HxcB8"
-              title="Widget Library Demo v1.0"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </Video>
+          <FlexDirectionColumn>
+            <DemoVideo>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/hoxgN3HxcB8"
+                title="Widget Library Demo v1.0"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </DemoVideo>
+            <FlexContainerRow>
+              <DemoScreenshotsImg
+                src="/widget_demo1-1.png"
+                style={{ paddingRight: 10 }}
+                alt="Screenshot from v1.0 Demo Video: home page"
+              />
+              <DemoScreenshotsImg
+                src="/widget_demo1-2.png"
+                style={{ paddingLeft: 10 }}
+                alt="Screenshot from v1.0 Demo Video: widget page"
+              />
+            </FlexContainerRow>
+          </FlexDirectionColumn>
           <VideoBullets>
             <p>
               <strong>Feedback:</strong>
@@ -117,17 +182,31 @@ function WidgetLibrary() {
         </FlexContainerColumn>
         <SubHeader>version 2.0 demo video: released for use</SubHeader>
         <FlexContainerColumn>
-          <Video>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/QymBTeX-tUY"
-              title="Widget Library Demo v2.0"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </Video>
+          <FlexDirectionColumn>
+            <DemoVideo>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/QymBTeX-tUY"
+                title="Widget Library Demo v2.0"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </DemoVideo>
+            <FlexContainerRow>
+              <DemoScreenshotsImg
+                src="/widget_demo2-1.png"
+                style={{ paddingRight: 10 }}
+                alt="Screenshot from v2.0 Demo Video: home page"
+              />
+              <DemoScreenshotsImg
+                src="/widget_demo2-2.png"
+                style={{ paddingLeft: 10 }}
+                alt="Screenshot from v2.0 Demo Video: widget page"
+              />
+            </FlexContainerRow>
+          </FlexDirectionColumn>
           <VideoBullets>
             <p>
               <strong>Feedback:</strong>
@@ -143,6 +222,15 @@ function WidgetLibrary() {
               </li>
             </ul>
           </VideoBullets>
+        </FlexContainerColumn>
+        <SubHeader>example of a Widget in use</SubHeader>
+        <p style={{ marginBottom: 0, marginTop: 10 }}>
+          <strong>Screenshots from the demo videos</strong>
+        </p>
+        <FlexContainerColumn style={{ flexWrap: "wrap" }}>
+          <UsageImg src="/widget_usage1.png" alt="Email and where to paste" />
+          <UsageImg src="/widget_usage2.png" alt="Widget when pasted" />
+          <UsageImg src="/widget_usage3.png" alt="Widget in mobile mode" />
         </FlexContainerColumn>
       </SRLWrapper>
     </ProjectLayout>

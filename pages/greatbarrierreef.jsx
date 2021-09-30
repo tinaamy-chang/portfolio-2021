@@ -18,6 +18,9 @@ const ReefHalfImg = styled.img`
     margin: 10px 0;
     max-width: 80%;
   }
+  &:hover {
+    cursor: pointer;
+  }
 `;
 const ReefQuarterImg = styled.img`
   max-width: 20%;
@@ -28,6 +31,9 @@ const ReefQuarterImg = styled.img`
   @media (max-width: 800px) {
     max-width: 60%;
     margin: 10px 0;
+  }
+  &:hover {
+    cursor: pointer;
   }
 `;
 
@@ -49,7 +55,7 @@ function GreatBarrier() {
                 <strong>Original Topic:</strong> Coral Reefs
               </li>
               <li>
-                <strong>Vision:</strong>I care deeply about the health of our
+                <strong>Vision:</strong> I care deeply about the health of our
                 oceans and wanted to highlight the decline of coral reefs around
                 the world in the face of overfishing, global warming, and
                 pollution. To do this, I wanted to use statistics gathered on a
@@ -79,15 +85,14 @@ function GreatBarrier() {
           />
           <Bullets>
             <p>
-              <strong>Topic Change:</strong>
-              Unfortunately, it was difficult to find reputable data on the
-              state of coral reefs around the world. Many reefs were not
-              observed consistently, producing sparse data that would be
-              difficult to use in visualizations or might mislead the audience.
-              Fortunately, the health of the Great Barrier Reef is extremely
-              well documented, as it is the largest reef in the world &mdash; I
-              decided that the Great Barrier Reef would be the focus of my
-              poster.
+              <strong>Topic Change:</strong> Unfortunately, it was difficult to
+              find reputable data on the state of coral reefs around the world.
+              Many reefs were not observed consistently, producing sparse data
+              that would be difficult to use in visualizations or might mislead
+              the audience. Fortunately, the health of the Great Barrier Reef is
+              extremely well documented, as it is the largest reef in the world
+              &mdash; I decided that the Great Barrier Reef would be the focus
+              of my poster.
             </p>
           </Bullets>
         </FlexContainerColumn>

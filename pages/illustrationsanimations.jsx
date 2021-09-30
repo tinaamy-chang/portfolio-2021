@@ -1,6 +1,6 @@
 import { SubHeader, Video } from "../components/layout";
 import ProjectLayout, {
-  FlexContainerRow,
+  FlexContainerGallery,
   FlexContainerColumn,
 } from "../components/projectlayout";
 import IllusAniImages from "../components/illusaniimages";
@@ -35,9 +35,9 @@ function IllustrationsAnimations() {
         </Video>
       </FlexContainerColumn>
       <SubHeader>Illustrations</SubHeader>
-      <FlexContainerRow>
+      <FlexContainerGallery>
         <IllusAniImages />
-      </FlexContainerRow>
+      </FlexContainerGallery>
     </ProjectLayout>
   );
 }

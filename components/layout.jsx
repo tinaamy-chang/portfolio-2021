@@ -31,7 +31,6 @@ export const ProfileContainer = styled.div`
 export const NoWrap = styled.span`
   white-space: nowrap;
 `;
-
 export const BoxContainer = styled.div`
   width: 85%;
   right: 0;
@@ -41,9 +40,13 @@ export const BoxContainer = styled.div`
   }
 `;
 export const HelloBox = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
   position: relative;
-  padding: 20px 25px;
+  padding: 20px 50px;
   border-radius: 5px;
   margin: 15px 65px;
   line-height: 1.2;
@@ -63,8 +66,8 @@ export const HelloText = styled.h1`
   font-size: 1.8rem;
   font-weight: 600;
   color: ${(props) => props.theme.colors.helloHeader};
-  margin: 0;
   transition: all 0.3s ease-in-out;
+  margin-right: 50px;
 `;
 
 export const Header = styled.h2`

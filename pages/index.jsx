@@ -46,7 +46,7 @@ const stagger = {
   animate: {
     transition: {
       staggerChildren: 0.2,
-      delayChildren: 0.2,
+      delayChildren: 0.35,
     },
   },
 };
@@ -69,7 +69,7 @@ export default function Home() {
           <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
             <HelloBox>
               <motion.div variants={fadeInDown}>
-                <HelloText style={{ marginBottom: 30 }}>
+                <HelloText>
                   Hello!
                   <br /> I am Tina Amy Chang 🐟
                 </HelloText>
@@ -85,13 +85,28 @@ export default function Home() {
       <BoxContainer>
         <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
           <Desktop>
-            <motion.div variants={firstStagger}>
+            <motion.div>
               <HelloBox>
                 <motion.div variants={fadeInDown}>
                   <HelloText>
                     Hello!
                     <br /> I am Tina Amy Chang 🐟
                   </HelloText>
+                </motion.div>
+                <motion.div variants={fadeInDown}>
+                  <Desktop>
+                    <motion.div
+                      whileHover={{
+                        scale: 1.01,
+                      }}
+                      whileTap={{ scale: 0.98 }}
+                      style={{ marginTop: 10, marginBottom: 10 }}
+                    >
+                      <ModeButton onClick={toggleTheme}>
+                        <NoWrap>{text}</NoWrap>
+                      </ModeButton>
+                    </motion.div>
+                  </Desktop>
                 </motion.div>
               </HelloBox>
             </motion.div>
@@ -175,7 +190,7 @@ export default function Home() {
                       </Link>
                     </AboutP>
                   </motion.div>
-                  <motion.div variants={fadeInDown}>
+                  {/* <motion.div variants={fadeInDown}>
                     <Desktop>
                       <motion.div
                         whileHover={{
@@ -188,7 +203,7 @@ export default function Home() {
                         </ModeButton>
                       </motion.div>
                     </Desktop>
-                  </motion.div>
+                  </motion.div> */}
                 </BoxLeftContent>
               </motion.div>
             </BoxLeft>
@@ -199,7 +214,7 @@ export default function Home() {
 
                 <BoxRightContent>
                   <motion.div variants={fadeInDown}>
-                    <Header>explore</Header>
+                    <Header>projects</Header>
                   </motion.div>
                   <motion.div
                     variants={fadeInDown}

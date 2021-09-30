@@ -5,7 +5,7 @@ import ArchivedImages from "../components/archivedimages";
 import { SubHeader, Video } from "../components/layout";
 import ProjectLayout, {
   FlexContainerColumn,
-  FlexContainerRow,
+  FlexContainerGallery,
 } from "../components/projectlayout";
 
 const BunLifeButtonImg = styled.img`
@@ -82,9 +82,9 @@ function Archived() {
           </a>
         </Link>
       </FlexContainerColumn>
-      <FlexContainerRow>
+      <FlexContainerGallery>
         <ArchivedImages />
-      </FlexContainerRow>
+      </FlexContainerGallery>
     </ProjectLayout>
   );
 }

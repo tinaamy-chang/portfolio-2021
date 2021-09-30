@@ -20,6 +20,9 @@ const FullImgPart = styled.img`
   @media (max-width: 800px) {
     max-width: 100%;
   }
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const OldImg = styled.img`
@@ -33,6 +36,9 @@ const OldImg = styled.img`
     margin: 10px 0;
     max-width: 80%;
   }
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 function PathwaysToSuccess() {
@@ -41,7 +47,7 @@ function PathwaysToSuccess() {
       <SRLWrapper>
         <p>
           Pathways to Success, rebranded as Pathways, is an educational program
-          for 8th graders run by faculty memebrs of the University of Southern
+          for 8th graders run by faculty members of the University of Southern
           California (USC) and the American Insitutes for Resarch (AIR). I was
           subcontracted by{" "}
           <Link href="https://wrasse.co" passHref>
