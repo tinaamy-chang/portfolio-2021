@@ -41,6 +41,7 @@ const UsageImg = styled.img`
 
 const DemoScreenshotsImg = styled.img`
   max-width: 200px;
+  min-width: 100px;
   margin-bottom: 10px;
   &:hover {
     cursor: pointer;
@@ -48,6 +49,7 @@ const DemoScreenshotsImg = styled.img`
 `;
 const FlexDirectionColumn = styled.div`
   flex-direction: column;
+  width: 100%;
 `;
 
 export const DemoVideo = styled.div`
