@@ -155,7 +155,7 @@ export default function Home() {
                   </motion.div>
                   <motion.div variants={fadeInDown}>
                     <AboutP>
-                      <Link href="/Tchang_resume_2021.pdf" passHref>
+                      <Link href="/Tchang_Resume_2021.pdf" passHref>
                         <AboutLinks aria-label="link to resume" target="_blank">
                           <NoWrap>📄&nbsp;&nbsp;Resume &#187;</NoWrap>
                         </AboutLinks>
