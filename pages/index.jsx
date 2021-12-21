@@ -120,9 +120,9 @@ export default function Home() {
                   </motion.div>
                   <motion.div variants={fadeInDown}>
                     <AboutP>
-                      🖥️&nbsp;&nbsp;Web Designer
+                      🖥️&nbsp;&nbsp;Product Designer
                       <br />
-                      🧪&nbsp;&nbsp;Bio-Rad Laboratories
+                      📦&nbsp;&nbsp;Freightpay
                       <br />
                       📍&nbsp;&nbsp;Bay Area, California
                     </AboutP>
