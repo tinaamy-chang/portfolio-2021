@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next dev",
     "build": "next build",
     "export": "yarn build && next export",
     "start": "next start",
@@ -14,6 +14,7 @@
     "@material-ui/icons": "^4.11.2",
     "ansi-regex": "^6.0.1",
     "components": "^0.1.0",
+    "cross-env": "^7.0.3",
     "framer-motion": "^4.1.17",
     "next": "^11.1.2",
     "react": "17.0.2",
