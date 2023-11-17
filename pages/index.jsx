@@ -120,9 +120,14 @@ export default function Home() {
                   </motion.div>
                   <motion.div variants={fadeInDown}>
                     <AboutP>
-                      🖥️&nbsp;&nbsp;Product Designer
+                      🖥️&nbsp;&nbsp;Product/UI/UX
                       <br />
-                      📦&nbsp;&nbsp;Freightpay
+                      📦&nbsp;&nbsp;
+                      <Link href="https://curant.io" passHref>
+                        <AboutLinks aria-label="link to github" target="_blank">
+                          Curant
+                        </AboutLinks>
+                      </Link>
                       <br />
                       📍&nbsp;&nbsp;Bay Area, California
                     </AboutP>
